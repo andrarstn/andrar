@@ -9,15 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- My CSS -->
+    <!--MyCSS-->
     <style>
-        section {
-            min-height: 280px;
-        }
-
+        html,
         body {
-            background: rgb(240, 240, 240);
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
         }
 
         .jumbotron {
@@ -26,26 +25,30 @@
             background-attachment: fixed;
             background-position: 0 -200px;
         }
-    </style>
 
+        .jumbotron img {
+            margin-top: 50px;
+        }
+    </style>
     <title>Andra Ristiano</title>
 </head>
 
-<body class="mt-5">
+<body>
     <!-- Navigasi -->
     <nav id="navigasi" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Andra Ristiano</a>
+            <a class="navbar-brand" href="index.html">Andra Ristiano</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="index.html">Home <span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#article">Article</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                    <a class="nav-item nav-link" href="article.html">Article</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -59,7 +62,7 @@
         </div>
     </div>
     <!-- About -->
-    <section id="about" class="about bg-light pt-4 my-2 mx-2">
+    <div class="about bg-light pt-4 my-2">
         <div class="container">
             <div class="row mb-4">
                 <div class="col text-center">
@@ -76,27 +79,25 @@
                         Yang beralamat di Jl. Babarsari 2 Yogyakarta (Kampus Unit 2).
                     </p>
                 </div>
-                <di class="col-md-5 text-justify">
+                <div class="col-md-5 text-justify">
                     <p>Sebelum masuk kampus UPN "Veteran" Yogyakarta, pemilik web telah menamatkan pendidikan SD selama
                         6 tahun, 1 tahun di
                         SDN Sidokare 2 dan 5 tahun di SDN Sidomulyo. Kemudian melanjutkan SMP selama 3 tahun di SMPN 1
                         Sleman, dan melanjutkan
                         SMA selama 3 tahun di SMAN 1 Sleman.
                     </p>
-                </di>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Article -->
-    <section id="article" class="article mt-2 pb-4 bg-light mx-2">
+    <div id="article" class="article bg-light">
         <div class="container">
-            <div class="row mb-4 pt-4">
+            <div class="row mb-4">
                 <div class="col text-center">
                     <h2>Article</h2>
                 </div>
             </div>
-
-            <!-- baris kedua -->
             <div class="row mb-3">
                 <div class="col-md mb-2">
                     <div class="card">
@@ -106,6 +107,7 @@
                                 mahasiswa
                                 teknik informatika. Memang ngoding bisa juga lewat smartphone, tetapi laptop selalu
                                 menjadi pilihan utama.
+                                <a href="article.html">Read more..</a>
                             </p>
                         </div>
                     </div>
@@ -115,9 +117,11 @@
                     <div class="card">
                         <img src="img/5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Teknik Informatika tidak lepas yang namanya ngoding. Ngoding sendiri
+                            <p class="card-text">Informatika tidak lepas yang namanya ngoding. Ngoding sendiri
                                 merupakan aktivitas yang
-                                bertujuan untuk membuat aplikasi atau ngoding bisa juga bertujuan untuk membuat website.
+                                bertujuan untuk membuat aplikasi. Ngoding ini juga mempunyai nama yang lain yaitu
+                                nyekrip.
+                                <a href="article.html">Read more..</a>
                             </p>
                         </div>
                     </div>
@@ -130,50 +134,22 @@
                             <p class="card-text">Walaupun sebenarnya ga penting-penting amat, tampilan keyboard yang
                                 menarik juga bisa
                                 membuat ngoding lebih tambah semangat. Karena ada dorongan untuk selalu ngetik.
+                                <a href="article.html">Read more..</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="contact my-2 bg-light mx-2">
-        <div class="container">
-            <div class="row pt-4 mb-3">
-                <div class="col text-center">
-                    <h2>Contact Us</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <!-- list -->
-                <div class="col">
-                    <ul class="list-group list-group-item-light text-dark">
-                        <li class="list-group-item">UPN "Veteran" Yogyakarta</li>
-                        <li class="list-group-item">Teknik Informatika</li>
-                        <li class="list-group-item">Jl. Babarsari 2 Yogyakarta</li>
-                        <li class="list-group-item"> <a href="https://www.instagram.com/andraristiano" target="blank">
-                                Instagram</a></li>
-                        <li class="list-group-item"> <a href="https://www.facebook.com/andra.r.50364" target="blank">
-                                Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
-        </div>
-        </div>
-    </section>
+    </div>
 
-    <footer class="bg-dark text-white mb-0">
-        <div class="container">
-            <div class="row pt-4 text-center">
-                <div class="col">
-                    <p>Copyright &copy 2019</p>
-                </div>
+
+    <footer class="bg-dark text-white">
+        <div class="row pt-4 text-center">
+            <div class="col">
+                <p>Copyright &copy 2019</p>
             </div>
         </div>
-
     </footer>
 
     <!-- Optional JavaScript -->
